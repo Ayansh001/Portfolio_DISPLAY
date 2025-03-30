@@ -1,5 +1,5 @@
 
-# Project Garden Grid
+# Project PORTFOLIO SHOWCASE
 
 ## Project Overview
 
