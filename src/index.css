@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+ * Base styling definitions with custom color palette
+ * Uses HSL colors for better control over lightness and saturation
+ */
+@layer base {
+  :root {
+    /* Light mode colors - modern, clean palette */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    --primary: 222 47% 35%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 210 20% 93%;
+    --secondary-foreground: 222 47% 30%;
+    
+    --muted: 210 40% 93%;
+    --muted-foreground: 222 20% 50%;
+    
+    --accent: 222 40% 92%;
+    --accent-foreground: 222 47% 25%;
+    
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 215 20% 85%;
+    --input: 215 20% 85%;
+    --ring: 222 47% 35%;
+    
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Dark mode colors - sleek, professional dark theme */
+    --background: 222 47% 10%;
+    --foreground: 210 40% 98%;
+    
+    --card: 222 47% 12%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 222 47% 12%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 210 60% 60%;
+    --primary-foreground: 222 47% 10%;
+    
+    --secondary: 222 30% 20%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 222 30% 20%;
+    --muted-foreground: 210 20% 80%;
+    
+    --accent: 222 30% 22%;
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 222 30% 25%;
+    --input: 222 30% 25%;
+    --ring: 210 60% 60%;
+  }
+ 
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    /* Smooth font rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Improve focus styles for accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+/* Custom component styles with enhanced visual treatments */
+@layer components {
+  /* Modern glass card effect with subtle depth */
+  .glass-card {
+    @apply bg-card/95 backdrop-blur-md shadow-lg border border-border/30 rounded-xl transition-all duration-300;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+  }
+  
+  /* Improved shadow styles */
+  .subtle-shadow {
+    @apply shadow-[0_8px_30px_rgb(0,0,0,0.04)];
+  }
+  
+  .elevated-shadow {
+    @apply shadow-[0_15px_35px_rgb(0,0,0,0.08)];
+  }
+  
+  /* Consistent section spacing */
+  .section-padding {
+    @apply py-24 px-6 sm:px-8 md:px-12 lg:px-24;
+  }
+  
+  /* Enhanced staggered reveal animation with customizable delay */
+  .reveal-animation {
+    @apply opacity-0;
+    animation: reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: calc(var(--delay) * 0.12s);
+  }
+  
+  /* Interactive link animation with custom underline */
+  .link-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary/70 after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  /* Enhanced badge styles with hover effects */
+  .badge {
+    @apply inline-flex items-center justify-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-all duration-300 hover:shadow-md hover:-translate-y-0.5;
+  }
+
+  .badge-primary {
+    @apply bg-primary/10 text-primary;
+  }
+
+  .badge-secondary {
+    @apply bg-secondary text-secondary-foreground;
+  }
+  
+  /* Button click animation */
+  .btn-click {
+    @apply active:scale-95 transition-transform duration-150;
+  }
+  
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  /* Image zoom on hover */
+  .img-zoom {
+    @apply transition-transform duration-500 hover:scale-110;
+  }
+  
+  /* Text highlight on hover */
+  .text-highlight {
+    @apply transition-colors duration-300 hover:text-primary;
+  }
+}
+
+/* Enhanced custom keyframe animations */
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* New animation for underline drawing */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Shimmer effect animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* New page transition animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Customize scrollbar for WebKit browsers with more subtle styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/30;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/30;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/50;
+}
