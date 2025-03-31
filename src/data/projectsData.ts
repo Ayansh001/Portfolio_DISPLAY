@@ -13,7 +13,6 @@ export const projectsData: Project[] = [
     repoUrl: "https://github.com/yourusername/portfolio",
     demoUrl: "https://yourdemo.com",
     technologies: ["React", "Tailwind CSS", "TypeScript"],
-    featured: true,
     category: "Web",
     detailsContent: "This portfolio website showcases my projects and skills. It was built using React and Tailwind CSS for styling. The site is fully responsive and includes animations for a better user experience."
   },
@@ -64,5 +63,18 @@ export const projectsData: Project[] = [
     technologies: ["React", "WebRTC", "Firebase", "Node.js"],
     category: "Full Stack",
     detailsContent: "A real-time chat application that enables users to communicate instantly. Built with WebSockets for real-time functionality and features user authentication, private messaging, and group chats."
+  },
+  {
+    id: "7",
+    title: "Meal Flow Visualizer",
+    description: "A communication platform with instant messaging, video calls, and collaborative document editing.",
+    repoUrl: "https://github.com/Ayansh001/Flow-WEV_DEV.git",
+    demoUrl: "https://flow-wev-dev.vercel.app/",
+    imageUrl:" https://api.microlink.io/?url=https%3A%2F%2Fflow-wev-dev.vercel.app%2F&overlay.browser=dark&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url ",
+    technologies: ["React", "WebRTC", "Firebase", "Node.js"],
+    featured: true,
+    category: "Full Stack",
+    detailsContent: "A real-time chat application that enables users to communicate instantly. Built with WebSockets for real-time functionality and features user authentication, private messaging, and group chats."
   }
+  
 ];

@@ -72,6 +72,17 @@ const projectsData: Project[] = [
     technologies: ["React", "WebRTC", "Firebase", "Node.js"],
     category: "Full Stack",
     detailsContent: "A real-time chat application that enables users to communicate instantly. Built with WebSockets for real-time functionality and features user authentication, private messaging, and group chats."
+  },
+  {
+    id: "7",
+    title: "Meal Flow Visualizer",
+    description: "A comprehensive nutrition and fitness tracking application built with modern web technologies.",
+    repoUrl: "https://github.com/Ayansh001/Flow-WEV_DEV.git",
+    demoUrl: "https://flow-wev-dev.vercel.app/",
+    technologies: ["React", "WebRTC", "Firebase", "Node.js"],
+    category: "Full Stack",
+    imageUrl:"https://flow-wev-dev.vercel.app/",
+    detailsContent: "The app offers nutrition tracking with a detailed macronutrient breakdown, customizable water intake monitoring, and workout planning with progress tracking, while providing insightful data visualizations and ensuring persistent data storage using the browser’s local storage, along with form validation, error handling, and a responsive design optimized for all devices, enhanced by code splitting and lazy loading for improved performance."
   }
 ];
 
@@ -155,11 +166,17 @@ const ProjectDetail: React.FC = () => {
           <div className="glass-card overflow-hidden mb-10 rounded-xl">
             <div className="h-[400px] relative">
               {project.imageUrl ? (
-                <img 
-                  src={project.imageUrl} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover" 
-                />
+                // <image 
+                //   src={project.imageUrl} 
+                //   alt={project.title} 
+                //   className="w-full h-full object-cover" 
+                // />
+                <iframe 
+                src={project.imageUrl} 
+                width="100%" 
+                height="600px" 
+                className="w-full h-full object-cover"
+                ></iframe>
               ) : (
                 <div className="w-full h-full flex items-center justify-center bg-secondary/50">
                   <Code className="h-16 w-16 text-foreground/20" />
