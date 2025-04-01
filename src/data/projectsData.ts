@@ -12,6 +12,7 @@ export const projectsData: Project[] = [
     description: "A professional portfolio website built with React and Tailwind CSS.",
     repoUrl: "https://github.com/Ayansh001/Portfolio_DISPLAY",
     demoUrl: "https://portfolio-display-five.vercel.app/",
+    imageUrl:" https://api.microlink.io/?url=https%3A%2F%2Fportfolio-display-five.vercel.app%2F&overlay.browser=dark&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url ",
     technologies: ["React", "Tailwind CSS", "TypeScript"],
     featured: true,
     category: "Web",
