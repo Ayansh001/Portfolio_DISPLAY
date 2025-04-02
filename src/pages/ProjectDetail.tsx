@@ -57,10 +57,11 @@ const projectsData: Project[] = [
   },
   {
     id: "5",
-    title: "Film Database Explorer",
+    title: "STREAM_SENSE",
     description: "A film exploration platform with advanced filtering, personal watchlists, and detailed information.",
-    repoUrl: "https://github.com/yourusername/movie-db",
-    demoUrl: "https://movie-db-demo.com",
+    repoUrl: "https://github.com/Ayansh001/STREAMSENSE.git",
+    demoUrl: "https://streamsense-eight.vercel.app/",
+    imageUrl:"https://streamsense-eight.vercel.app/",
     technologies: ["React", "GraphQL", "TailwindCSS"],
     category: "API",
     detailsContent: "A movie database application that lets users browse and search for movies. It fetches data from The Movie Database (TMDB) API and provides detailed information about movies, actors, and directors."
