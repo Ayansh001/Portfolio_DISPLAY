@@ -48,9 +48,11 @@ const projectsData: Project[] = [
   },
   {
     id: "4",
-    title: "E-commerce Platform",
-    description: "A scalable e-commerce solution with product management, secure payments, and order tracking.",
-    repoUrl: "https://github.com/yourusername/ecommerce",
+    title: "MARKET_MINDS",
+    description: "A real-time cryptocurrency dashboard that tracks prices, market trends, and historical data.",
+    repoUrl: "https://github.com/Ayansh001/MARKETMINDS",
+    demoUrl: "https://marketminds-henna.vercel.app/",
+    imageUrl: " https://api.microlink.io/?url=https%3A%2F%2Fmarketminds-henna.vercel.app%2F&overlay.browser=dark&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url ",
     technologies: ["React", "Node.js", "PostgreSQL", "Stripe API"],
     category: "Full Stack",
     detailsContent: "A full-featured e-commerce platform that supports product browsing, cart management, and secure checkout. Integrated with Stripe for payment processing."
