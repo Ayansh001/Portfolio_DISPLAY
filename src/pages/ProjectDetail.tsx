@@ -68,14 +68,16 @@ const projectsData: Project[] = [
     category: "API",
     detailsContent: "A movie database application that lets users browse and search for movies. It fetches data from The Movie Database (TMDB) API and provides detailed information about movies, actors, and directors."
   },
-  {
+   {
     id: "6",
-    title: "Real-time Collaboration Tool",
-    description: "A communication platform with instant messaging, video calls, and collaborative document editing.",
-    repoUrl: "https://github.com/yourusername/chat-app",
-    technologies: ["React", "WebRTC", "Firebase", "Node.js"],
+    title: "HomeHorizon_ExPlore",
+    description: "HomeHorizon India is a modern real estate platform designed specifically for the Indian market.",
+    repoUrl: "https://github.com/Ayansh001/HOME-HORIZON_EXPLORE",
+    demoUrl: "  https://home-horizon-exploreee.vercel.app/ ",
+    imageUrl: "https://home-horizon-exploreee.vercel.app/ ",
+    technologies: ["React", "Node.js"],
     category: "Full Stack",
-    detailsContent: "A real-time chat application that enables users to communicate instantly. Built with WebSockets for real-time functionality and features user authentication, private messaging, and group chats."
+    detailsContent: "HomeHorizon India is a modern real estate platform designed specifically for the Indian market. It allows users to search, filter, and explore property listings across major Indian cities."
   },
   {
     id: "7",
