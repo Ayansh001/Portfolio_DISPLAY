@@ -56,16 +56,18 @@ export const projectsData: Project[] = [
     repoUrl: "https://github.com/Ayansh001/TRENDMOOD--PLEX",
     demoUrl: "https://trendmood-plex-movie.vercel.app/",
     imageUrl: " https://api.microlink.io/?url=https%3A%2F%2Ftrendmood-plex-movie.vercel.app%2F&overlay.browser=dark&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url ",
-    technologies: ["React", "GraphQL", "TailwindCSS"],
+    technologies: ["React",  "TailwindCSS"],
     category: "API",
     detailsContent: "A movie database application that lets users browse and search for movies. It fetches data from The Movie Database (TMDB) API and provides detailed information about movies, actors, and directors."
   },
   {
     id: "6",
-    title: "Real-time Collaboration Tool",
-    description: "A communication platform with instant messaging, video calls, and collaborative document editing.",
-    repoUrl: "https://github.com/yourusername/chat-app",
-    technologies: ["React", "WebRTC", "Firebase", "Node.js"],
+    title: "HomeHorizon_ExPlore",
+    description: "HomeHorizon India is a modern real estate platform designed specifically for the Indian market.",
+    repoUrl: "https://github.com/Ayansh001/HOME-HORIZON_EXPLORE",
+    demoUrl: "  https://home-horizon-exploreee.vercel.app/ ",
+    imageUrl: " https://api.microlink.io/?url=https%3A%2F%2Fhome-horizon-exploreee.vercel.app%2F&overlay.browser=dark&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url ",
+    technologies: ["React", "Node.js"],
     category: "Full Stack",
     detailsContent: "A real-time chat application that enables users to communicate instantly. Built with WebSockets for real-time functionality and features user authentication, private messaging, and group chats."
   },
