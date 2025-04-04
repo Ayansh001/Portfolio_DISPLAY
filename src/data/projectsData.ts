@@ -69,7 +69,7 @@ export const projectsData: Project[] = [
     imageUrl: " https://api.microlink.io/?url=https%3A%2F%2Fhome-horizon-exploreee.vercel.app%2F&overlay.browser=dark&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url ",
     technologies: ["React", "Node.js"],
     category: "Full Stack",
-    detailsContent: "A real-time chat application that enables users to communicate instantly. Built with WebSockets for real-time functionality and features user authentication, private messaging, and group chats."
+    detailsContent: "HomeHorizon India is a modern real estate platform designed specifically for the Indian market"
   },
   {
     id: "7",
