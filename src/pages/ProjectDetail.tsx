@@ -59,11 +59,11 @@ const projectsData: Project[] = [
   },
   {
     id: "5",
-    title: "STREAM_SENSE",
+    title: "TRENDMOOD_PLEX",
+    repoUrl: "https://github.com/Ayansh001/TRENDMOOD--PLEX",
+    demoUrl: "https://trendmood-plex-movie.vercel.app/",
+    imageUrl: " https://trendmood-plex-movie.vercel.app/ ",
     description: "A film exploration platform with advanced filtering, personal watchlists, and detailed information.",
-    repoUrl: "https://github.com/Ayansh001/STREAMSENSE.git",
-    demoUrl: "https://streamsense-eight.vercel.app/",
-    imageUrl:"https://streamsense-eight.vercel.app/",
     technologies: ["React", "GraphQL", "TailwindCSS"],
     category: "API",
     detailsContent: "A movie database application that lets users browse and search for movies. It fetches data from The Movie Database (TMDB) API and provides detailed information about movies, actors, and directors."
