@@ -26,16 +26,18 @@ const projectsData: Project[] = [
     category: "Web",
     detailsContent: "This portfolio website showcases my projects and skills. It was built using React and Tailwind CSS for styling. The site is fully responsive and includes animations for a better user experience."
   },
-  {
-    id: "2",
-    title: "Weather Dashboard",
-    description: "An interactive weather application that provides real-time forecasts and visualizations.",
-    repoUrl: "https://github.com/yourusername/weather-app",
-    demoUrl: "https://weather-app-demo.com",
-    technologies: ["React", "API Integration", "Chart.js"],
-    category: "API",
-    detailsContent: "A weather application that provides current weather data and forecasts for locations worldwide. It integrates with the OpenWeather API to fetch real-time weather information."
-  },
+{
+  id: "2",
+  title: "LofiFy",
+  description: "A calming lofi music discovery platform integrated with YouTube and Supabase for seamless streaming and smooth UI.",
+  repoUrl: "https://github.com/Ayansh001/LofiFy",
+  demoUrl: "https://lofi-fy.vercel.app/",
+  imageUrl: "https://lofi-fy.vercel.app/",
+  technologies: ["React", "TypeScript", "Tailwind CSS", "Supabase", "Vite"],
+  featured: true,
+  category: "Web",
+  detailsContent: "LofiFy is a relaxing web application built for discovering and streaming lofi music. It features a clean UI, YouTube-based playback, and a fully integrated Supabase backend. Whether you're working, studying, or just vibing — LofiFy sets the mood."
+},
   {
     id: "3",
     title: "Task Management System",
