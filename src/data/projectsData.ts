@@ -31,15 +31,17 @@ export const projectsData: Project[] = [
   detailsContent: "LofiFy is a relaxing web application built for discovering and streaming lofi music. It features a clean UI, YouTube-based playback, and a fully integrated Supabase backend. Whether you're working, studying, or just vibing — LofiFy sets the mood."
 },
   {
-    id: "3",
-    title: "Task Management System",
-    description: "A comprehensive task manager with authentication, real-time updates, and team collaboration features.",
-    repoUrl: "https://github.com/yourusername/task-manager",
-    demoUrl: "https://task-manager-demo.com",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
-    category: "Full Stack",
-    detailsContent: "A comprehensive task management solution that allows users to create, organize, and track their tasks. Features include user authentication, task categorization, and deadline reminders."
-  },
+  id: "3",
+  title: "API Unlocked Academy",
+  description: "A platform to explore and learn about APIs, built with modern web technologies.",
+  repoUrl: "https://github.com/Ayansh001/API-UNLOCKED_ACADEMY",
+  demoUrl: "https://api-unlocked-academy.vercel.app/",
+  imageUrl: "https://api.microlink.io/?url=https%3A%2F%2Fapi-unlocked-academy.vercel.app%2F&overlay.browser=dark&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url",
+  technologies: ["React", "Tailwind CSS", "TypeScript"],
+  featured: true,
+  category: "Web",
+  detailsContent: "API Unlocked Academy is a web application that helps users explore different APIs and learn how to integrate them into projects. It is built using React and Tailwind CSS for a sleek, responsive UI, and leverages TypeScript for type safety and robust development."
+},
   {
     id: "4",
     title: "MARKET_MINDS",
