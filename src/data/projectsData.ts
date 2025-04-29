@@ -85,6 +85,18 @@ export const projectsData: Project[] = [
     technologies: ["React", "WebRTC", "Firebase", "Node.js"],
     category: "Full Stack",
     detailsContent: "A real-time chat application that enables users to communicate instantly. Built with WebSockets for real-time functionality and features user authentication, private messaging, and group chats."
-  }
+  },
+  {
+  "id": "8",
+  "title": "Pawsitive – Dog Training App",
+  "description": "A modern web application focused on dog training techniques for happier pets and owners.",
+  "repoUrl": "https://github.com/Ayansh001/Pawsitive-Training---Dog-Training-App",
+  "demoUrl": "https://pawsitive-dog-training-app.vercel.app/",
+  "imageUrl": "https://api.microlink.io/?url=https%3A%2F%2Fpawsitive-dog-training-app.vercel.app%2F&overlay.browser=dark&overlay.background=%23c1c1c1&screenshot=true&embed=screenshot.url",
+  "technologies": ["Vite", "TypeScript", "React", "shadcn-ui", "Tailwind CSS", "Three.js"],
+  "featured": true,
+  "category": "Web",
+  "detailsContent": "This dog training application features interactive 3D dog models, training guides, quick tips, and success stories from other dog owners. Built using Vite and React with TypeScript, it includes modern UI components from shadcn-ui, Tailwind CSS for responsive styling, and Three.js for immersive 3D experiences."
+}
   
 ];
