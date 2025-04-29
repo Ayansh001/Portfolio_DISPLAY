@@ -93,7 +93,19 @@ const projectsData: Project[] = [
     category: "Full Stack",
     imageUrl:"https://flow-wev-dev.vercel.app/",
     detailsContent: "The app offers nutrition tracking with a detailed macronutrient breakdown, customizable water intake monitoring, and workout planning with progress tracking, while providing insightful data visualizations and ensuring persistent data storage using the browser’s local storage, along with form validation, error handling, and a responsive design optimized for all devices, enhanced by code splitting and lazy loading for improved performance."
-  }
+  },
+  {
+  "id": "8",
+  "title": "Pawsitive – Dog Training App",
+  "description": "A modern web application focused on dog training techniques for happier pets and owners.",
+  "repoUrl": "https://github.com/Ayansh001/Pawsitive-Training---Dog-Training-App",
+  "demoUrl": "https://pawsitive-dog-training-app.vercel.app/",
+  "imageUrl": "https://pawsitive-dog-training-app.vercel.app/",
+  "technologies": ["Vite", "TypeScript", "React", "shadcn-ui", "Tailwind CSS", "Three.js"],
+  "featured": true,
+  "category": "Web",
+  "detailsContent": "This dog training application features interactive 3D dog models, training guides, quick tips, and success stories from other dog owners. Built using Vite and React with TypeScript, it includes modern UI components from shadcn-ui, Tailwind CSS for responsive styling, and Three.js for immersive 3D experiences."
+}
 ];
 
 /**
